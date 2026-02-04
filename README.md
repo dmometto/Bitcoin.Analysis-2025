@@ -1,47 +1,112 @@
-📈 Bitcoin Analysis 2025: Sazonalidade e Volatilidade
+# 📈 Bitcoin Analysis 2025  
+### Sazonalidade e Volatilidade do Mercado
 
-Este projeto consiste em uma análise de dados focada no comportamento do Bitcoin durante o ano de 2025. O estudo visa identificar padrões de rendimento mensal (sazonalidade) e medir o nível de instabilidade do ativo através da amplitude de preços (volatilidade), fornecendo uma visão clara sobre os momentos de maior risco e oportunidade no mercado financeiro.
+Este projeto apresenta uma **análise de dados do Bitcoin ao longo do ano de 2025**, com foco na identificação de **padrões de sazonalidade** e na mensuração da **volatilidade do ativo**.  
 
-⚙️ Funcionalidades
-Processamento ETL Automático: Conversão de Timestamps e limpeza de dados brutos para garantir a integridade da análise.
+O objetivo é oferecer uma visão clara sobre **momentos de maior risco e oportunidade**, utilizando métricas estatísticas e visualizações intuitivas para apoiar decisões no mercado financeiro.
 
-Filtragem Temporal: Recorte específico para o ano de 2025, eliminando ruídos de anos anteriores.
+---
 
-Cálculo de Performance: Geração automática da variação percentual entre os períodos selecionados.
+## 🎯 Objetivos do Projeto
 
-Métricas de Risco: Cálculo de amplitude diária para análise de volatilidade e exposição ao risco.
+- Identificar padrões de rendimento mensal do Bitcoin (sazonalidade)
+- Avaliar o nível de instabilidade do ativo por meio da volatilidade diária
+- Facilitar a visualização de períodos de lucro e prejuízo
+- Criar uma base de dados limpa e estruturada para análises futuras
 
-Visualização de Dados: Geração de gráficos de barras com paletas divergentes para facilitar a distinção visual entre lucros e prejuízos.
+---
 
-🔬 Metodologias
+## ⚙️ Funcionalidades
 
-Pontos de Controle: A base original minuto a minuto foi filtrada para capturar apenas os dados do dia 01 (abertura), 15 (meio) e último dia (fechamento) de cada mês.
+- **Processamento ETL Automático**  
+  Conversão de timestamps, tratamento de duplicatas e limpeza de dados brutos.
 
-Variação Percentual: A variação é calculada comparando o preço de fechamento atual com o preço de fechamento do período anterior, multiplicando o resultado por 100 para obter o valor percentual.
+- **Filtragem Temporal**  
+  Recorte exclusivo para o ano de **2025**, eliminando ruídos históricos.
 
-Indicador de Volatilidade: Utilização da diferença absoluta entre os preços máximo (High) e mínimo (Low) registrados no mesmo dia para mensurar a amplitude de negociação e o risco sistêmico.
+- **Cálculo de Performance**  
+  Geração automática da variação percentual entre períodos selecionados.
 
-🛠️ Tecnologias Usadas
+- **Métricas de Risco**  
+  Cálculo da amplitude diária dos preços para análise de volatilidade.
 
-Python
+- **Visualização de Dados**  
+  Gráficos de barras com paletas divergentes para fácil distinção entre lucros e perdas.
 
-Pandas
+---
 
-Seaborn e Matplotlib
+## 🔬 Metodologia
 
-Jupyter Notebook
+### 📌 Pontos de Controle
+A base original (dados minuto a minuto) foi filtrada para capturar apenas:
+- **Dia 01** (abertura do mês)
+- **Dia 15** (meio do mês)
+- **Último dia** (fechamento do mês)
 
-📂 Estrutura do Projeto
-O repositório está organizado de forma modular, separando as etapas de tratamento e análise visual:
+### 📊 Variação Percentual
+A variação percentual é calculada da seguinte forma:
 
-TratamentoDados.ipynb: Script principal responsável pela carga do dataset, aplicação dos filtros de data, tratamento de duplicatas e exportação da base limpa.
+((Preço Atual - Preço Anterior) / Preço Anterior) * 100
 
-VariacaoMedia.ipynb: Notebook dedicado à análise visual da sazonalidade e performance mensal do Bitcoin.
 
-Volatilidade.ipynb: Notebook focado no mapeamento do risco e análise da amplitude de preços.
+### 📉 Indicador de Volatilidade
+A volatilidade é mensurada pela **amplitude diária**, utilizando a diferença absoluta entre:
 
-bitcoin_2025.csv: Arquivo de dados processados contendo o resumo estratégico do ano de 2025.
+- Preço máximo (**High**)
+- Preço mínimo (**Low**)
 
-requirements.txt: Lista de dependências para instalação e replicação do ambiente de desenvolvimento.
+Essa métrica representa o nível de risco e instabilidade do ativo no período.
 
-.gitignore: Configuração para impedir o envio de arquivos temporários e datasets brutos de grande escala para o repositório.
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Python**
+- **Pandas**
+- **Matplotlib**
+- **Seaborn**
+- **Jupyter Notebook**
+
+---
+
+## 📂 Estrutura do Projeto
+
+📦 bitcoin-analysis-2025
+├── TratamentoDados.ipynb
+├── VariacaoMedia.ipynb
+├── Volatilidade.ipynb
+├── bitcoin_2025.csv
+├── requirements.txt
+└── .gitignore
+
+
+### 📄 Descrição dos Arquivos
+
+- **TratamentoDados.ipynb**  
+  Responsável pela carga do dataset, filtros temporais, tratamento de duplicatas e exportação da base limpa.
+
+- **VariacaoMedia.ipynb**  
+  Análise visual da sazonalidade e performance mensal do Bitcoin.
+
+- **Volatilidade.ipynb**  
+  Mapeamento do risco e análise da amplitude de preços.
+
+- **bitcoin_2025.csv**  
+  Dataset processado com o resumo estratégico do ano de 2025.
+
+- **requirements.txt**  
+  Lista de dependências para replicação do ambiente.
+
+- **.gitignore**  
+  Configuração para evitar o versionamento de arquivos temporários e datasets brutos de grande escala.
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/dmometto/bitcoin-analysis-2025.git
+Instale as dependências:
+
+pip install -r requirements.txt
