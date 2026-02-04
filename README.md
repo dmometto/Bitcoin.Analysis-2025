@@ -73,32 +73,10 @@ Essa métrica representa o nível de risco e instabilidade do ativo no período.
 
 📦 bitcoin-analysis-2025
 ├── TratamentoDados.ipynb
-├── VariacaoMedia.ipynb
-├── Volatilidade.ipynb
+├── Graficos.ipynb
 ├── bitcoin_2025.csv
 ├── requirements.txt
 └── .gitignore
-
-
-### 📄 Descrição dos Arquivos
-
-- **TratamentoDados.ipynb**  
-  Responsável pela carga do dataset, filtros temporais, tratamento de duplicatas e exportação da base limpa.
-
-- **VariacaoMedia.ipynb**  
-  Análise visual da sazonalidade e performance mensal do Bitcoin.
-
-- **Volatilidade.ipynb**  
-  Mapeamento do risco e análise da amplitude de preços.
-
-- **bitcoin_2025.csv**  
-  Dataset processado com o resumo estratégico do ano de 2025.
-
-- **requirements.txt**  
-  Lista de dependências para replicação do ambiente.
-
-- **.gitignore**  
-  Configuração para evitar o versionamento de arquivos temporários e datasets brutos de grande escala.
 
 ---
 
