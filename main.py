@@ -23,7 +23,7 @@ class BitcoinAnalysis:
         return self
 
 
-    def _get_specific_dates(self) ->pd.DataFrame:
+    def _get_specific_dates(self) -> pd.DataFrame:
         dates_df = self.base_2025[
             (self.base_2025[self.column].dt.day ==1) |
             (self.base_2025[self.column].dt.day ==15) |
