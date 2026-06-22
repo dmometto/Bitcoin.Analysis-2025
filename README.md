@@ -49,6 +49,12 @@ A variação percentual é calculada da seguinte forma:
 ((Preço Atual - Preço Anterior) / Preço Anterior) * 100
 
 
+### 📁 Dataset
+O arquivo original utilizado na análise (btcusd_1-min_data.csv) possui um volume muito grande de dados, ultrapassando os limites de armazenamento recomendados para versionamento no GitHub.
+
+Por esse motivo, o arquivo não foi disponibilizado no repositório, sendo assim segue o link para download da base original: https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data 
+
+
 ### 📉 Indicador de Volatilidade
 A volatilidade é mensurada pela **amplitude diária**, utilizando a diferença absoluta entre:
 
@@ -65,17 +71,15 @@ Essa métrica representa o nível de risco e instabilidade do ativo no período.
 - **Pandas**
 - **Matplotlib**
 - **Seaborn**
-- **Jupyter Notebook**
 
 ---
 
 ## 📂 Estrutura do Projeto
 
 📦 bitcoin-analysis-2025
-├── TratamentoDados.ipynb
+├── main.py
 ├── Graficos.ipynb
-├── bitcoin_2025.csv
-├── requirements.txt
+├── result_bitcoin_2025.csv
 └── .gitignore
 
 ---
@@ -85,6 +89,3 @@ Essa métrica representa o nível de risco e instabilidade do ativo no período.
 1. Clone este repositório:
    ```bash
    git clone https://github.com/dmometto/bitcoin-analysis-2025.git
-Instale as dependências:
-
-pip install -r requirements.txt
