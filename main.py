@@ -52,5 +52,4 @@ class BitcoinAnalysis:
 df = pd.read_csv("btcusd_1-min_data.csv", sep=',')
 analysis = BitcoinAnalysis(df, 'Timestamp')
 resultado = (analysis.formate_data().prepare_final_dataframe())
-
 resultado.to_csv('result_bitcoin_2025.csv', index=False)
